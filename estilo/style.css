@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Kaushan+Script&family=Passion+One&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Kaushan+Script&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-titulo: 'Passion One';
+    --fonte-poesia: 'Sriracha';
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    margin: auto;
+    background-color: black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+}
+
+header > h1 {
+    color: white;
+
+    font-family: var(--fonte-titulo);
+    font-weight: lighter;
+    font-size: 10vw;
+
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+header > p {
+    color:rgb(150, 148, 148);
+
+    font-family: var(--fonte-padrao);
+    font-weight: none;
+    font-size: 1em;
+
+    text-align: center;
+    
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+section {
+    font-family: var(--fonte-poesia);
+    font-size: 3.5vw;
+
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+
+    margin: auto;
+    
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 1.2em;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.63);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+section#img001 {
+    background-image: url(../pacote-d012/imagens/background001.jpg);
+    
+    
+    
+}
+
+section#img002 {
+    background-image: url(../pacote-d012/imagens/background002.jpg);
+    
+}
+
+.link {
+    text-decoration: none;
+
+    color: white;
+    font-weight: bolder;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: darkgray;
+}
+
+.link:active {
+    color: lightyellow;
+}
+
+footer {
+    background-color: black;
+
+    color:rgb(150, 148, 148);
+
+    font-family: var(--fonte-padrao);
+    font-weight: none;
+    font-size: 1em;
+
+    text-align: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
